@@ -1,0 +1,19 @@
+{
+    "name": "@zxz-ui/button",
+    "version": "1.0.0",
+    "description": "Buttons allow users to perform actions and choose with a single tap.",
+    "keywords": [
+      "button"
+    ],
+    "author": "zxz",
+    "packageManager": "npm@8.15.0",
+    "license": "MIT",
+    "main": "src/index.ts",
+    "scripts": {
+      "dev": "echo \"message from @zxz-ui/button\" && exit 0"
+    },
+    "peerDependencies": {
+      "react": ">=18",
+      "react-dom": ">=18"
+    }
+}
