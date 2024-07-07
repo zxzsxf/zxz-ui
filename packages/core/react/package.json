@@ -1,0 +1,17 @@
+{
+  "name": "@zxz-ui/react",
+  "version": "1.0.0",
+  "description": "🚀 Beautiful and modern React UI library.",
+  "keywords": ["@zxz-ui", "components", "react components", "react ui"],
+  "author": "zxz",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {},
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@zxz-ui/button": "workspace:*"
+  }
+}
