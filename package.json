@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:sb": "turbo dev --filter=@zxz-ui/storybook",
+    "dev:storybook": "turbo dev --filter=@zxz-ui/storybook",
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint"
