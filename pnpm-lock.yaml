@@ -20,6 +20,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      sass:
+        specifier: ^1.77.6
+        version: 1.77.6
       turbo:
         specifier: ^1.11.3
         version: 1.13.4
@@ -1814,7 +1817,7 @@ packages:
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.5.3)
       typescript: 5.5.3
-      vite: 4.5.3
+      vite: 4.5.3(sass@1.77.6)
     dev: true
 
   /@jridgewell/gen-mapping@0.3.5:
@@ -2902,7 +2905,7 @@ packages:
       magic-string: 0.30.10
       rollup: 3.29.4
       typescript: 5.5.3
-      vite: 4.5.3
+      vite: 4.5.3(sass@1.77.6)
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3332,7 +3335,7 @@ packages:
       react: 18.3.1
       react-docgen: 7.0.3
       react-dom: 18.3.1(react@18.3.1)
-      vite: 4.5.3
+      vite: 4.5.3(sass@1.77.6)
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -3810,7 +3813,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.7)
       magic-string: 0.27.0
       react-refresh: 0.14.2
-      vite: 4.5.3
+      vite: 4.5.3(sass@1.77.6)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5446,6 +5449,10 @@ packages:
   /ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
+    dev: true
+
+  /immutable@4.3.6:
+    resolution: {integrity: sha512-Ju0+lEMyzMVZarkTn/gqRpdqd5dOPaz1mCZ0SH3JV6iFw81PldE/PEB1hWVEA288HPt4WXW8O7AWxB10M+03QQ==}
     dev: true
 
   /imurmurhash@0.1.4:
@@ -7104,6 +7111,16 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sass@1.77.6:
+    resolution: {integrity: sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.6
+      source-map-js: 1.2.0
+    dev: true
+
   /scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
     dependencies:
@@ -7853,7 +7870,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite@4.5.3:
+  /vite@4.5.3(sass@1.77.6):
     resolution: {integrity: sha512-kQL23kMeX92v3ph7IauVkXkikdDRsYMGTVl5KY2E9OY4ONLvkHf04MDTbnfo6NKxZiDLWzVpP5oTa8hQD8U3dg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -7884,6 +7901,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.39
       rollup: 3.29.4
+      sass: 1.77.6
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
